@@ -62,5 +62,13 @@
     "sort-packages": true
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+    "scripts": {
+        "post-install-cmd": [
+            "bash ./install.sh"
+        ],
+        "post-update-cmd": [
+            "bash ./install.sh"
+        ]
+    }
 }
